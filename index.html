@@ -7,16 +7,14 @@
     <meta name="Keith Williams Jr" content="Coding Projects">
     <title>Keith's Portfolio</title>
     <!-- Bootstrap -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
-    <link href="public/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <!-- Font awesome - iconic font with IE7 support --> 
-    <link href="public/css/font-awesome.css" rel="stylesheet">
-    <link href="public/css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
-    <link href="public/css/boot-business.css" rel="stylesheet">
-    <!-- Custom -->
-    <link href="public/css/custom.css" rel="stylesheet">
+    <link href="css/boot-business.css" rel="stylesheet">
   </head>
   <body>
     <!-- Start: HEADER -->
@@ -56,7 +54,8 @@
                     <li><a href="http://flatironschool.com">Flatiron School</a></li>
                   </ul>
                 </li>
-                <li><a href = "mailto:keithwilliamsATgmailDOTcom" 
+                <li>
+                <a href = "mailto:keithwilliamsATgmailDOTcom" 
                    onclick = "this.href=this.href
                     .replace(/AT/,'&#64;')
                     .replace(/DOT/,'&#46;')">
@@ -79,7 +78,7 @@
               <div class="active item">
                 <div class="hero-unit">
                   <div class="row-fluid">
-                    <div class="span7 marketting-info">
+                    <div class="span7">
                       <h1>Playlister App</h1>
                       <p>
                         A playlister application that shows all the artists, genres and songs in the dataset and gives the ability to play the songs on the song page via Spotify. Also artist news provided through EchoNest API.
@@ -90,7 +89,26 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="public/img/music_2.jpg" class="thumbnail">
+                      <img src="img/music_2.jpg" class="thumbnail">
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="item">
+                <div class="hero-unit">
+                  <div class="row-fluid">
+                    <div class="span7">
+                      <h1>Transcriot</h1>
+                      <p>
+                        Transcriot is a web application created for the NYPL Labs that provides the ability for volunteers to transcribe eyewitness accounts of the New York City Draft Riots of 1863. Rails, Regex & jQuery for selection boxes.
+                      </p>
+                      <h3>
+                        <a href="http://transcriot.herokuapp.com" class="btn btn-primary">Play here</a>&nbsp;
+                        <a href="https://github.com/Kphillycat/transcriot" class="btn">Code here</a>
+                      </h3>                      
+                    </div>
+                    <div class="span5">
+                      <img src="img/book-shelf.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -109,7 +127,7 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="public/img/game.jpg" class="thumbnail">
+                      <img src="img/game.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -128,15 +146,15 @@
                       </h3>                      
                     </div>
                     <div class="span5">
-                      <img src="public/img/map.jpg" class="thumbnail">
+                      <img src="img/map.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
               </div>
               
             </div>
-            <a class="left carousel-control" href="#heroSlider" data-slide="prev">‹</a>
-            <a class="right carousel-control" href="#heroSlider" data-slide="next">›</a>
+            <a class="left carousel-control" href="#heroSlider" data-slide="prev">â€¹</a>
+            <a class="right carousel-control" href="#heroSlider" data-slide="next">â€º</a>
           </div>
         </div>
       </div>
@@ -148,9 +166,9 @@
           </div>
           <div class="row-fluid">
             <ul class="thumbnails">
-              <li class="span4">
+              <li class="span3">
                 <div class="thumbnail">
-                  <img src="public/img/music_2.jpg" alt="product name">
+                  <img src="img/music_2.jpg" alt="Playlister">
                   <div class="caption">
                     <h3>Playlister</h3>
                     <p>
@@ -165,9 +183,27 @@
                   </div>
                 </div>
               </li>
-              <li class="span4">
+              <li class="span3">
                 <div class="thumbnail">
-                  <img src="public/img/game.jpg" alt="product name">
+                  <img src="img/book-shelf.jpg" alt="Transcriot">
+                  <div class="caption">
+                    <h3>Transcriot</h3>
+                    <p>
+                      Transcriot is a web application created for the NYPL Labs that provides the ability for volunteers to transcribe eyewitness accounts of the New York City Draft Riots of 1863. Rails, Regex & jQuery for selection boxes.
+                    </p>
+                  </div>
+                  <div class="widget-footer">
+                    <p>
+                      <a href="http://transcriot.herokuapp.com" class="btn btn-primary">Play here</a>&nbsp;
+                      <a href="https://github.com/Kphillycat/transcriot" class="btn">Code here</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="span3">
+                <div class="thumbnail">
+                  <img src="img/game.jpg" alt="Game of Life">
                   <div class="caption">
                     <h3>Game of Life</h3>
                     <p>
@@ -182,9 +218,9 @@
                   </div>
                 </div>
               </li>
-              <li class="span4">
+              <li class="span3">
                 <div class="thumbnail">
-                  <img src="public/img/map.jpg" alt="product name">
+                  <img src="img/map.jpg" alt="Rescuisine">
                   <div class="caption">
                     <h3>Rescuisine</h3>
                     <p>
@@ -228,12 +264,12 @@
         <h4>Get social with me!</h4>
           <!-- <div class="social-icons-row"> -->
             <span>
-              <a href="https://www.github.com/kphillycat/" data-icon-text="Github"><img src="public/img/bw-github.png" alt=""><img src="public/img/github.png" alt=""></a>
-              <a href="https://twitter.com/kphillycat" data-icon-text="Kphillycat"><img src="public/img/bw-twitter.png" alt=""><img src="public/img/twitter.png" alt=""></a>
-              <a href="https://plus.google.com/+KeithWilliamsJr" data-icon-text="Gplus"><img src="public/img/bw-googleplus.png" alt=""><img src="public/img/googleplus.png" alt=""></a>
-              <a href="http://codewardbound.tumblr.com" data-icon-text="Tumblr"><img src="public/img/bw-tumblr.png" alt=""><img src="public/img/tumblr.png" alt=""></a>
-              <a href="http://www.linkedin.com/in/keithewilliamsjr" data-icon-text="LinkedIn"><img src="public/img/bw-linkedin.png" alt=""><img src="public/img/linkedin.png" alt=""></a>
-              <a href="http://www.pinterest.com/kphillycat/" data-icon-text="Pinterest"><img src="public/img/bw-pinterest.png" alt=""><img src="public/img/pinterest.png" alt=""></a>           
+              <a href="https://www.github.com/kphillycat/" data-icon-text="Github"><img src="img/bw-github.png" alt=""><img src="img/github.png" alt=""></a>
+              <a href="https://twitter.com/kphillycat" data-icon-text="Kphillycat"><img src="img/bw-twitter.png" alt=""><img src="img/twitter.png" alt=""></a>
+              <a href="https://plus.google.com/+KeithWilliamsJr" data-icon-text="Gplus"><img src="img/bw-googleplus.png" alt=""><img src="img/googleplus.png" alt=""></a>
+              <a href="http://codewardbound.tumblr.com" data-icon-text="Tumblr"><img src="img/bw-tumblr.png" alt=""><img src="img/tumblr.png" alt=""></a>
+              <a href="http://www.linkedin.com/in/keithewilliamsjr" data-icon-text="LinkedIn"><img src="img/bw-linkedin.png" alt=""><img src="img/linkedin.png" alt=""></a>
+              <a href="http://www.pinterest.com/kphillycat/" data-icon-text="Pinterest"><img src="img/bw-pinterest.png" alt=""><img src="img/pinterest.png" alt=""></a>           
             </span>
           <!-- </div> -->
         </div>
@@ -260,8 +296,9 @@
       </div>
     </footer>
     <!-- End: FOOTER -->
-    <script type="text/javascript" src="public/js/jquery.min.js"></script>
-    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/boot-business.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/boot-business.js"></script>
   </body>
 </html>
+
