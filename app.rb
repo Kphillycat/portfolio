@@ -23,6 +23,10 @@ module Name
       erb :contact
     end
 
+    get '/resume' do
+      erb :resume
+    end
+
     #helpers
     helpers do
       def partial(file_name)
